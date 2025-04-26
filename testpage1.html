@@ -1,29 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test page 1</title>
-    <link rel="stylesheet" href="static/styles.css">
-    <link rel="reconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+</style>
 </head>
-<body class="bg-two">
-    <header class="iceland-regular" align="center">
-        <nav><a href="https://scotthamilton.site/"> Home </a> &nbsp; &nbsp; <a href="about.html"> About </a> &nbsp; &nbsp; <a href="codingjournal.html"> Coding Journal </a>&nbsp; &nbsp; <a href="contactme.html"> Contact me </a>
-        </nav>
-    </header>
-    <div class="iceland-regular">
-      <h1 align="center">Test page 1</h1>
-        <br>
-      <p>Starting over, but this time the site is live.</p>
+<body>
 
-    </div>  
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a href="#about">About</a></li>
+</ul>
 
-
-    <footer>
-        <a href="https://scotthamilton.site/">Scott Hamilton's Site</a>
-    </footer>
 </body>
 </html>

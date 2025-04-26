@@ -1,4 +1,4 @@
-# Scott-Hamiltons-site
+# Scott-Hamiltons
 Online GitHub Repository for scotthamilton.site created by code only with no other design assisting software.
 
 All rights reserved.

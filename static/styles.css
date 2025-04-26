@@ -18,64 +18,71 @@
     font-family: "Iceland", sans-serif;
     font-weight: 400;
     font-style: normal;
+	
   }
 
-nav {
-	text-align: center;
-}
-
-    nav ul {
-    border: 1px solid #ccc;
-    border-width: 1px 0;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    }
-    
-    nav li {
-      display: inline; /* Make list items horizontal */
-      padding: 0 10px; /* Add some spacing between items */
-    }
-    
-    nav li a {
-      text-decoration: none; /* Remove underlines */
-      color: black; /* Set link color */
-    }
-
   body {
-    width: 90%;
-    margin: 40px auto;
+    width: 96%;
+    margin: 40 auto;
     font-size: 30px;
-	  background-color: rgb(38, 42, 45);
+	background-color: rgb(38, 42, 45);
     color: #ffffff;
 
   }
   
-  /* on h1 tag just add margin:0 auto; */ 
-  h1 { color: white; font-size: 60px;
-    font-weight: 800;
-    text-align: center;
-    margin:0 auto;
-  } 
- 
-
-  h2 {
-    text-align: center;
+  .header {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
   }
 
-  h3 {
+  h1 {
     text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: center;
+    display: inline;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
   }
 
   p {
     line-height: 1.4;
   }
   
+  iframe {
+    frameborder="4";
+  }
+
   a {
     outline-color: transparent;
   }
   
+iframe {
+  background-color: white;
+  align-content: center;
+}
+
   a:link {
     color: #ffffff;
     text-decoration: none;
