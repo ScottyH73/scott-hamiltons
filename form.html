@@ -1,18 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Home</title>
     <link rel="stylesheet" href="static/styles.css">
     <link rel="reconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+    <style>
+      ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      }  
+      li {
+      float: left;
+      border-right:1px solid #bbb;
+      }
+        li:last-child {
+      border-right: none;
+      }
+        li a {
+      display: inline;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      }
+        li a:hover:not(.active) {
+      background-color: #3d4a8f;
+      }
+        .active {
+      background-color: #364163;
+      }
+    </style>
 </head>
 <body class="iceland-regular">
-    <header align="center">
-      <nav><a href="https://scotthamilton.site/"> Home </a> &nbsp; &nbsp; <a href="about.html"> About </a> &nbsp; &nbsp; <a href="codingjournal.html"> Coding Journal </a>&nbsp; &nbsp; <a href="contactme.html"> Contact me </a>&nbsp; &nbsp; <a href="html.html"> HTML </a>
-      </nav>
+  <header>
+    <nav>
+      <ul class="iceland-regular">
+        <li><a class="active" target="_self" href="index.html">Coding Journey</a></li>
+        <li><a target="_self" href="about.html">About</a></li>
+        <li><a target="_self" href="codingjournal.html">Coding Journal</a></li>
+        <li><a target="_self" href="contactme.html">Contact me</a></li>
+        <li style="float:right"><a target="_self" href="html.html">HTML</a></li>
+      </ul>
+    </nav>
+ </header>
     <div class="iceland-regular">
       <h1 align="center">Form</h1>
         <br>
