@@ -1,136 +1,116 @@
   
-  .bg-one {
-    background-color: transparent;
-  }
-  
-  .bg-two {
-    background-color: rgb(38, 42, 45);
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-  }
-  
-  .bg-three {
-    background-color: #71717a;
-    color: #ffffff;
-  }
+ .one {
+  background-color: transparent;
+ }
+ 
+.two {
+  background-color: rgb(38, 42, 45);
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
 
-  .iceland-regular {
-    font-family: "Iceland", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-	
-  }
+.three {
+  background-color: #71717a;
+  color: #ffffff;
+}
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #7d8185;
-  }
-  
-  li {
-    float: left;
-    border-right:1px solid #768091;
-  }
-  
-  li:last-child {
-    border-right: none;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: #1f3b8a;
-  }
-  
-  .active {
-    background-color: #405182;
-  }
+.small-logo {
+  padding-left: 12px;
+  padding-right: 12px;
+}
 
-  body {
-    width: 96%;
-    margin: 40 auto;
-    font-size: 30px;
+.iceland-regular {
+  font-family: "Iceland", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.active {
+  background-color: rgb(80, 90, 100);
+}
+
+body {
+  width: 90%;
+  margin: 40 auto;
 	background-color: rgb(38, 42, 45);
-    color: #ffffff;
-
-  }
+  color: #ffffff;
+}
   
-  h1 {
-    text-align: center;
-  }
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
 
-  p {
-    line-height: 1.4;
-  }
+h2 {
+  text-align: center;
+  font-size: 40px;
+}
 
-  a {
-    outline-color: transparent;
-  }
+h3 {
+  text-align: center;
+  font-size: 30px;
+}
+
+a {
+  outline-color: transparent;
+}
   
 iframe {
   background-color: white;
   align-content: center;
 }
 
-  a:link {
-    color: #ffffff;
-    text-decoration: none;
-    background: transparent;
-  }
+a:link {
+  color: hsl(205, 70%, 85%);
+  text-decoration: none;
+  background: transparent;
+}
   
-  a:visited {
-    color: #5d96ff;
-    text-decoration: none;
-    background: transparent;
-  }
+a:visited {
+  color: #cdd3df;
+  text-decoration: none;
+  background: transparent;
+}
   
-  a:focus {
-    color: #ffffff;
-    text-decoration: none;
-    background: transparent;
-  }
+a:focus {
+  color: #c1d3df;
+  text-decoration: none;
+  background: transparent;
+}
   
-  a:hover {
-    color: #0084ff;
-    text-decoration: none;
-    background: transparent;
-  }
+a:hover {
+  color: #128b8b;
+  text-decoration: none;
+  background: transparent;
+}
   
-  a:active {
-    color: #00ff15;
-    text-decoration: none;
-    background: transparent;
-  }
+a:active {
+  color: #00ccff;
+  text-decoration: none;
+  background: transparent;
+}
 
-  .grid-container > div {
-    background-color: rgb(38, 42, 45);
-    color: #ffffff;
-    padding: 10px;
-    font-size: 20px;
-    text-align: center;
-  } 
+.grid-container > div {
+  background-color: rgb(38, 42, 45);
+  color: #ffffff;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+} 
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: 25% 25% auto auto;
-    gap: 40px;
-    background-color:  rgb(38, 42, 45);
-    padding: 10px;
-  }
-  .containers > span {
-    background-color: #3b4d3c;
-    color: #dce014;
-    padding: 10px;
-    font-size: 30px;
-    text-align: center;
-  }
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 25% auto auto;
+  gap: 40px;
+  background-color:  rgb(38, 42, 45);
+  padding: 10px;
+}
+.containers > span {
+  background-color: #3b4d3c;
+  color: #dce014;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
   
   
