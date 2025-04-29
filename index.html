@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="images/scotthamiltons-ICO.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
   <title>Coding Journey</title>
   <link rel="stylesheet" href="static/styles.css">
   <link rel="reconnect" href="https://fonts.googleapis.com">
@@ -61,7 +61,34 @@ li a:hover:not(.active) {
  <br>
   <h1>Coding Journey</h1>
     <br>
-  <h3>Welcome to my coding journey.</h3>
+  <h3>It's 2025, studying html, css and Javascript.</h3>
+  <br>
+  <pre font-size="10px" id="code-block">
+    function myFunction() {
+        console.log("Hello, World!");
+    }
+    myFunction();
+  </pre>
+  
+  <script font-size="10px">
+    const preElement = document.getElementById('code-block');
+    const codeContent = preElement.textContent;
+  
+    function countLines(text) {
+        return text.split('\n').length;
+    }
+  
+    const lineCount = countLines(codeContent);
+  
+    const displayElement = document.createElement('p');
+    displayElement.textContent = `This code block uses ${lineCount} lines.`;
+  
+    document.body.appendChild(displayElement);
+  </script>
+  <div background-color="0, 0, 0" color="255, 255, 255">
+    <p>Scotthamilton.site is where I test web development code.</p>
+
+  </div>
     <p>This site was built completely by coding every element.</p>
       <br>
     <p>Recommended news and information sites:</p>
