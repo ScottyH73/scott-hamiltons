@@ -1,3 +1,13 @@
-.two {
-    opacity="0.3";
-}
+li {
+    list-style-type: none;
+    display: inline;
+    padding-top: 18px; 
+    overflow: hidden;
+  }  
+
+  body {
+    width: 96%;
+    margin: 20 20;
+    background-color: rgb(38, 42, 45);
+    color: #ffffff;
+  }

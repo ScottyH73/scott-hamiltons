@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/scotthamiltons-ICO.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon-2.png" type="image/x-icon">
     <title>Coding Journey</title>
     <link rel="stylesheet" href="static/styles.css">
     <link rel="reconnect" href="https://fonts.googleapis.com">
@@ -45,10 +45,10 @@
   }
     </style>
   </head>
-  <body class="iceland-regular">
+  <body>
     <header>
-      <nav>
-        <ul class="iceland-regular">
+      <nav class="iceland-regular">
+        <ul>
           <li><img width="40" src="images/LOGO-150-PNG.png" alt="logo"></li>
           <li><a target="_self" href="https://scotthamilton.site">Coding Journey</a></li>
           <li><a target="_self" href="about.html">About</a></li>
@@ -59,11 +59,77 @@
       </nav>
    </header>
    <br>
-      <h1>HTML</h1>
+      <h1 class="iceland-regular">HTML</h1>
         <br>
       <p>Snipets of code all over the place.</p>
-      <p><a href="testpage1.html">Test Page 1</a></p>
-    </div>  
+      <h4><a target="_blank" href="testpage1.html">Test Page 1</a></h4>
+      <h4><a target="_blank" href="testpage2.html">Test Page 2</a></h4>
+      <br>
+      <hr>
+      <p class="pp">I include this code in all head elements at the least.</p>
+      <button id="copyButton">Copy Code below</button>
+      <script>
+          const copyButton = document.getElementById('copyButton');
+  
+          copyButton.addEventListener('click', () => {
+              fetch('documents/HeadCode.txt') // Replace 'your_text_file.txt' with the path to your file
+                  .then(response => response.text())
+                  .then(text => {
+                      navigator.clipboard.writeText(text)
+                          .then(() => {
+                              alert('Code Copied!');
+                          })
+                          .catch(err => {
+                              console.error('Failed to copy text: ', err);
+                          });
+                  })
+                  .catch(err => {
+                      console.error('Failed to read the file: ', err);
+                  });
+          });
+      </script>
+      <iframe
+      src="documents/HeadCode.txt"
+      frameBorder="4"
+      class="example-two"
+      scrolling="auto"
+      height="120"
+      width="100%">
+      </iframe>
+    <br>
+    <hr>
+    <p>This is the code that was created to be able to copy these code snippets. Note that several parts needed customizing for each particular situation.</p>
+    <button id="copyButtonb">Copy Code below</button>
+    <script>
+        const copyButtonb = document.getElementById('copyButtonb');
+
+        copyButtonb.addEventListener('click', () => {
+            fetch('documents/CopyCode.txt') // Replace 'your_text_file.txt' with the path to your file
+                .then(response => response.text())
+                .then(text => {
+                    navigator.clipboard.writeText(text)
+                        .then(() => {
+                            alert('Code Copied!');
+                        })
+                        .catch(err => {
+                            console.error('Failed to copy text: ', err);
+                        });
+                })
+                .catch(err => {
+                    console.error('Failed to read the file: ', err);
+                });
+        });
+    </script>
+    <iframe
+    src="documents/CopyCode.txt"
+    frameBorder="4"
+    class="example-two"
+    scrolling="auto"
+    height="500"
+    width="100%">
+    </iframe>
+    <br>
+    <hr>
     <div class="grid-container">
         <div>
           Another story about a golfing buddy that fell into a pit of biters. Now the biters, bite.</div>
@@ -74,7 +140,6 @@
           </div>
           <p>Another beautiful sunset by the artist. If a picture is worth a thousand words, then two pictures are worht 3 thousand words, minus a thousand and 5 plus 15 minus 10.</p>
           <div>    
-            
           </div>
         </div>
         <div>Lets put some thing container 4. Like a brief sentence describing how I add things to object for no appeearant reason other than to practice another obscure element.</div>
@@ -85,7 +150,6 @@
         <div>7</div>
         <div>8</div>
       </div>
-      <a href="warning.xml">warning</a>
     <footer>
         <a href="https://scotthamilton.site/">Scott Hamilton's Site</a>
     </footer>
