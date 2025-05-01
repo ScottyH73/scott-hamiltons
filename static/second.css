@@ -1,13 +1,33 @@
-li {
-    list-style-type: none;
-    display: inline;
-    padding-top: 18px; 
-    overflow: hidden;
-  }  
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
-  body {
-    width: 96%;
-    margin: 20 20;
-    background-color: rgb(38, 42, 45);
-    color: #ffffff;
-  }
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #111;
+}
+
+body {
+  width: 96%;
+  margin: 20 20;
+  background-color: rgb(38, 42, 45);
+  color: #ffffff;
+}
